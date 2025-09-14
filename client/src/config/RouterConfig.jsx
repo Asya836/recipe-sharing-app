@@ -5,8 +5,6 @@ import LoginPage from '../pages/LoginPage';
 import RegisterPage from '../pages/RegisterPage';
 import ProfilePage from '../pages/ProfilePage';
 import RecipeAddPage from '../pages/RecipeAddPage';
-import LikeRecipePage from '../pages/LikeRecipePage';
-import SaveRecipesPage from '../pages/SaveRecipesPage';
 
 
 function RouterConfig({ searchTerm, setSearchTerm }) {
@@ -18,8 +16,6 @@ function RouterConfig({ searchTerm, setSearchTerm }) {
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/add-recipe" element={<RecipeAddPage />} />
             <Route path="/recipe-add/:id" element={<RecipeAddPage />} />
-            <Route path="/liked-recipes" element={<LikeRecipePage />} />
-            <Route path="/saved-recipes" element={<SaveRecipesPage />} />
         </Routes>
     )
 }
