@@ -1,0 +1,25 @@
+.login-register-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../public/assets/recipe-background2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title {
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.input-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
