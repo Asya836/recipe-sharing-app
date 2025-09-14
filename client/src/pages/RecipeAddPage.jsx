@@ -16,7 +16,6 @@ function RecipeAddPage() {
     const { id } = useParams();
     const editMode = !!id;
     const [recipe, setRecipe] = useState(null);
-
     const [title, setTitle] = useState("");
     const [category, setCategory] = useState("Sebze Yemekleri");
     const [ingredients, setIngredients] = useState("");
@@ -24,7 +23,6 @@ function RecipeAddPage() {
     const [imageFile, setImageFile] = useState(null);
     const [imageUrl, setImageUrl] = useState("");
 
-    // Düzenleme modunda tarif verisini backend'den çek
     useEffect(() => {
         if (editMode && id) {
             setLoading(true);
@@ -130,9 +128,7 @@ function RecipeAddPage() {
     if (editMode && loading) {
         return <div style={{ textAlign: 'center', marginTop: '50px' }}>Tarif verileri yükleniyor...</div>;
     }
-    if (editMode && loading) {
-        return <div style={{ textAlign: 'center', marginTop: '50px' }}>Tarif verileri yükleniyor...</div>;
-    }
+
     return (
         <div style={{ margin: 0, padding: 0, height: '100vh', overflow: 'hidden' }}>
             <div className='container'>

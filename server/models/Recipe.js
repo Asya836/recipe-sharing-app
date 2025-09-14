@@ -8,8 +8,6 @@ const recipeSchema = new mongoose.Schema({
     image: { type: String },
     category: { type: String, required: true },
     author: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
-    likeCount: { type: Number, default: 0 },
-    saveCount: { type: Number, default: 0 },
     createdAt: { type: Date, default: Date.now }
 });
 

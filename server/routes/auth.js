@@ -1,11 +1,44 @@
-
 const express = require("express");
 const bcrypt = require("bcryptjs");
 const User = require("../models/User");
 
 const router = express.Router();
 
-// DELETE (kullanıcı sil)
+router.post("/register", async (req, res) => {
+    try {
+        const { username, email, password } = req.body;
+
+        const hashedPassword = await bcrypt.hash(password, 10);
+
+        const newUser = new User({ username, email, password: hashedPassword });
+        await newUser.save();
+
+        res.status(201).json({ message: "Kayıt başarılı!" });
+    } catch (err) {
+        res.status(400).json({ error: "Kayıt sırasında hata oluştu." });
+    }
+});
+
+
+router.post("/login", async (req, res) => {
+    try {
+        const { email, password } = req.body;
+
+        const user = await User.findOne({ email });
+        if (!user) return res.status(400).json({ error: "Kullanıcı bulunamadı" });
+
+        const isPasswordValid = await bcrypt.compare(password, user.password);
+        if (!isPasswordValid) return res.status(400).json({ error: "Hatalı şifre" });
+
+        const token = jwt.sign({ id: user._id }, "SECRET_KEY", { expiresIn: "1h" });
+
+        res.json({ message: "Giriş başarılı", token });
+    } catch (err) {
+        res.status(500).json({ error: "Sunucu hatası" });
+    }
+});
+
+
 router.delete("/delete", async (req, res) => {
     try {
         const authHeader = req.headers.authorization;
@@ -26,25 +59,7 @@ router.delete("/delete", async (req, res) => {
     }
 });
 
-// REGISTER
-router.post("/register", async (req, res) => {
-    try {
-        const { username, email, password } = req.body;
 
-        // Şifreyi hashle
-        const hashedPassword = await bcrypt.hash(password, 10);
-
-        const newUser = new User({ username, email, password: hashedPassword });
-        await newUser.save();
-
-        res.status(201).json({ message: "Kayıt başarılı!" });
-    } catch (err) {
-        res.status(400).json({ error: "Kayıt sırasında hata oluştu." });
-    }
-});
-
-
-// UPDATE (profil güncelle)
 router.put("/update", async (req, res) => {
     try {
         const authHeader = req.headers.authorization;
@@ -70,36 +85,7 @@ router.put("/update", async (req, res) => {
     }
 });
 
-module.exports = router;
 
-
-
-const jwt = require("jsonwebtoken");
-
-
-// LOGIN
-router.post("/login", async (req, res) => {
-    try {
-        const { email, password } = req.body;
-
-        // Kullanıcıyı bul
-        const user = await User.findOne({ email });
-        if (!user) return res.status(400).json({ error: "Kullanıcı bulunamadı" });
-
-        // Şifre doğru mu?
-        const isPasswordValid = await bcrypt.compare(password, user.password);
-        if (!isPasswordValid) return res.status(400).json({ error: "Hatalı şifre" });
-
-        // Token oluştur
-        const token = jwt.sign({ id: user._id }, "SECRET_KEY", { expiresIn: "1h" });
-
-        res.json({ message: "Giriş başarılı", token });
-    } catch (err) {
-        res.status(500).json({ error: "Sunucu hatası" });
-    }
-});
-
-// ME (profil bilgisi)
 router.get("/me", async (req, res) => {
     try {
         const authHeader = req.headers.authorization;
@@ -119,3 +105,7 @@ router.get("/me", async (req, res) => {
         res.status(500).json({ error: "Sunucu hatası" });
     }
 });
+
+module.exports = router;
+
+const jwt = require("jsonwebtoken");

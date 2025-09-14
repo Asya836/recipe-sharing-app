@@ -7,7 +7,9 @@ import { useNavigate } from 'react-router-dom';
 function RecipeAddButton() {
     const navigate = useNavigate();
     const isLoggedIn = !!localStorage.getItem('token');
+
     if (!isLoggedIn) return null;
+
     return (
         <div>
             <Tooltip title="Tarif Ekle">

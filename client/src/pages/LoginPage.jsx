@@ -13,7 +13,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 function LoginPage() {
-
     const navigate = useNavigate();
 
     const submit = async (values) => {

@@ -1,7 +1,5 @@
 # Tarif Paylaşım Uygulaması
 
-Sunucu tarafında ise genellikle Express ve Mongoose gibi kütüphaneler kullanılır.
-
 Bu proje, kullanıcıların tariflerini paylaşabildiği ve diğer kullanıcıların tariflerini görüntüleyebildiği bir web uygulamasıdır.
 
 ## Proje Yapısı
@@ -92,8 +90,8 @@ Bu proje, kullanıcıların tariflerini paylaşabildiği ve diğer kullanıcıla
 
 ## Geliştirme Fikirleri
 - Tarif beğenme, kaydetme ve yorum yapma eklenebilir.
-- Kullanıcıların birbirlerini takip etmesi sağlanabilir.
+- Diğer kullanıcıların profilleri görüntülebilir ve kullanıcıların birbirlerini takip etmesi sağlanabilir.
 
 ## Bilinen Hatalar
-- Kategorileme yaparken Category componenti kayıyor.
+- Kategorileme veya arama yaparken Category componenti kayıyor.
 - Eklenen resimler kaydedilmiyor dolayısıyla görüntülenemiyor.
