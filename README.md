@@ -111,7 +111,7 @@ Tarif ekleme sayfası(Anasayfada sağ alttaki butona basınca açılır)
 
 
 Tarif detay görüntüsü
-<img width="1877" height="850" alt="tarif detay" src="https://github.com/user-attachments/assets/2662008b-7aa4-4eaa-80e0-ff3cca1adc40" />
+<img width="700" height="500" alt="tarif detay" src="https://github.com/user-attachments/assets/2662008b-7aa4-4eaa-80e0-ff3cca1adc40" />
 
 
 Arama ve kategorileme
@@ -120,6 +120,7 @@ Arama ve kategorileme
 
 
 Profil sayfası
+
 <img width="700" height="500" alt="profil" src="https://github.com/user-attachments/assets/477344b2-7f30-460a-a484-c1d72b8206ca" />
 
 
