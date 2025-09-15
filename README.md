@@ -93,7 +93,7 @@ Bu proje, kullanıcıların tariflerini paylaşabildiği ve diğer kullanıcıla
 
 ## Ekran Görüntüleri
 
-Giriş yapılmadan anasayfa görüntüsü
+Giriş yapılmadan önceki anasayfa görüntüsü
 <img width="700" height="500" alt="başlangıç" src="https://github.com/user-attachments/assets/f5b545be-c8be-4016-9567-5637f3bfa34e" />
 
 
@@ -110,7 +110,7 @@ Tarif ekleme sayfası(Anasayfada sağ alttaki butona basınca açılır)
 <img width="700" height="500" alt="tarif ekle" src="https://github.com/user-attachments/assets/84243462-939a-4011-89ff-03f6c1dec447" />
 
 
-Tarif detay görüntüsü
+Tarif detayının görüntüsü
 <img width="700" height="500" alt="tarif detay" src="https://github.com/user-attachments/assets/2662008b-7aa4-4eaa-80e0-ff3cca1adc40" />
 
 
