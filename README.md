@@ -94,35 +94,43 @@ Bu proje, kullanıcıların tariflerini paylaşabildiği ve diğer kullanıcıla
 ## Ekran Görüntüleri
 
 Giriş yapılmadan anasayfa görüntüsü
-<img width="700" height="500" src="https://github.com/user-attachments/assets/0ef5dd27-2008-4f01-90fc-b20c1eb1f961" />
+<img width="700" height="500" alt="başlangıç" src="https://github.com/user-attachments/assets/f5b545be-c8be-4016-9567-5637f3bfa34e" />
+
 
 Giriş ve kayıt sayfaları
-<img width="700" height="500" src="https://github.com/user-attachments/assets/3d1cfc68-45a1-4165-87d3-dcffb58464df" />
-<img width="700" height="500" src="https://github.com/user-attachments/assets/6de49144-cf1c-4aad-9889-10bc9c7fbcad" />
+<img width="700" height="500" alt="giriş" src="https://github.com/user-attachments/assets/81baef06-8abe-4acc-9a99-2f78cc9e1d4e" />
+<img width="700" height="500" alt="kayıt" src="https://github.com/user-attachments/assets/2b2ff7ee-dad9-41e4-bd8e-2a0864176ef3" />
+
 
 Giriş yapıldıktan sonra anasayfa görüntüsü
-<img width="700" height="500" src="https://github.com/user-attachments/assets/dd773766-e829-43c1-91be-e81816173213" />
+<img width="700" height="500" alt="anasayfa" src="https://github.com/user-attachments/assets/a06e9cc6-9d78-4cf6-9408-391fa74fd0b5" />
+
 
 Tarif ekleme sayfası(Anasayfada sağ alttaki butona basınca açılır)
-<img width="700" height="500" src="https://github.com/user-attachments/assets/312770e0-0fd2-4c7b-8eaa-49d1b1de97b4" />
+<img width="700" height="500" alt="tarif ekle" src="https://github.com/user-attachments/assets/84243462-939a-4011-89ff-03f6c1dec447" />
+
 
 Tarif detay görüntüsü
-<img width="700" height="500" src="https://github.com/user-attachments/assets/f2fdf878-8f25-41d9-8992-6a71042e2191" />
+<img width="1877" height="850" alt="tarif detay" src="https://github.com/user-attachments/assets/2662008b-7aa4-4eaa-80e0-ff3cca1adc40" />
+
 
 Arama ve kategorileme
-<img width="700" height="500" src="https://github.com/user-attachments/assets/dbf00545-c243-4edd-8f4a-dd623c8021fb" />
-<img width="700" height="500" src="https://github.com/user-attachments/assets/822effa1-cb34-47aa-9a8d-cec3924f88a6" />
+<img width="700" height="500" alt="arama" src="https://github.com/user-attachments/assets/4add4d86-3ff4-4a15-971a-7d404a351cb7" />
+<img width="700" height="500" alt="kategori" src="https://github.com/user-attachments/assets/ffd6ddb9-5a5f-4f91-aabd-dd8dc819be37" />
+
 
 Profil sayfası
+<img width="700" height="500" alt="profil" src="https://github.com/user-attachments/assets/477344b2-7f30-460a-a484-c1d72b8206ca" />
 
-<img width="700" height="500" src="https://github.com/user-attachments/assets/471e34ad-131a-4aa8-86a6-d88ac09e2776" />
 
 
 Kullanıcı bilgileri düzenleme
-<img width="700" height="500" src="https://github.com/user-attachments/assets/e47779fa-5e9c-4d68-92b7-cdefbf11953d" />
+<img width="700" height="500" alt="bilgi düzenle" src="https://github.com/user-attachments/assets/51922b45-8e1c-4c41-8d56-069efe24ea8d" />
+
 
 Tarif bilgileri düzenleme
-<img width="700" height="500" src="https://github.com/user-attachments/assets/22bfa55b-4677-456c-9fdb-dc40d8aedb64" />
+<img width="700" height="500" alt="tarif düzenle" src="https://github.com/user-attachments/assets/8ec6f15d-fcda-4f13-9ffb-4a1ea287ebc4" />
+
 
 
 ## Geliştirme Fikirleri
